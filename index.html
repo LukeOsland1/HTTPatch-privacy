@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTTPatch Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { margin-top: 2.2rem; font-size: 1.25rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+  li { margin: .35rem 0; }
+  footer { margin-top: 3rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+<h1>HTTPatch Privacy Policy</h1>
+<p><em>Last updated: 23 September 2026</em></p>
+<p>HTTPatch is maintained by <a href="https://github.com/LukeOsland1">Luke Osland</a>. It modifies
+HTTP headers using rules you configure. It has no developer-operated server,
+analytics, advertising or tracking.</p>
+<h2>Local storage and exports</h2>
+<p>Profiles, header names and values, filters, colours and settings are stored on your
+device using the browser&#39;s <code>storage.local</code> API. These values are not encrypted by
+HTTPatch and may include credentials such as tokens or cookies.</p>
+<p>Import and export read and write JSON files locally at your request. Exported files
+include header values in plaintext. The extension warns before exporting recognised
+credential headers and previews imported rules before you confirm them.</p>
+<h2>Browser sync</h2>
+<p><strong>Profile sync is on by default.</strong> Profiles, including their header values, and your
+theme preference are copied into your browser account&#39;s <code>storage.sync</code> area. Your
+browser provider handles replication and its account protections apply. HTTPatch does
+not add its own encryption and the developer does not receive the synced data.
+Pause state and the selected profile stay local to each device.
+The tab-only setting travels with a profile; its assigned tab ID is stored only
+for the current browser session on this device. A tab-only profile without an
+assignment stays inactive, including after a restart or on another device.</p>
+<p>You can turn <strong>Sync</strong> off in the options page. Use <strong>Remove synced copy</strong> afterwards
+to delete previously uploaded data. Your local profiles remain. To ensure the
+synced copy is removed, do this before uninstalling the extension.</p>
+<h2>Websites and permissions</h2>
+<p>HTTPatch uses <code>declarativeNetRequestWithHostAccess</code> to apply your header rules.
+Broad host access is requested because rules can target any website. Header changes
+are applied by the browser: HTTPatch does not read request or response bodies.
+When you open the popup, HTTPatch reads the current tab&#39;s URL to offer a site
+shortcut. Opening the popup alone does not save that URL. If you choose
+<strong>Scope to this site</strong>, the site&#39;s domain is saved as a profile filter and may
+be included in browser sync. HTTPatch does not send the URL to the developer.</p>
+<p>HTTPatch includes <strong>no content scripts</strong> and does not read page content, forms,
+browsing history or user activity.</p>
+<p>The <code>storage</code> permission saves settings and supports browser sync. The <code>alarms</code>
+permission schedules sync batches and periodic checks for profile changes.</p>
+<p>HTTPatch uses this data only to apply the rules you configure and to sync your
+profiles if enabled. The developer cannot read your profiles, header values or
+site filters, and does not use them for advertising.</p>
+<h2>External links and donations</h2>
+<p>Author and optional donation links open only when clicked. They do not include your
+profiles or header values. Destination sites have their own privacy policies.
+Donations are handled by <a href="https://ko-fi.com/lukeosland">Ko-fi</a>; HTTPatch does not
+collect payment details. All features remain free regardless of donations.</p>
+<h2>Retention and contact</h2>
+<p>Delete profiles or uninstall the extension to remove locally stored configuration.
+To remove synced data, turn sync off and choose <strong>Remove synced copy</strong> first.</p>
+<p>Maintainer contact details are available on
+<a href="https://github.com/LukeOsland1">Luke Osland&#39;s GitHub profile</a>.
+Updates to this policy are included with the extension and in the project documentation.</p>
+
+<footer>Published from <code>PRIVACY.md</code> by GitHub Actions. Only this page is deployed.</footer>
+</body>
+</html>
